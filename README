@@ -2,8 +2,8 @@ NAME
     lexicals - Create a hash of your 'my' variables
 
 SYNOPSIS
-      use Template::Toolkit::Simple;
-      use lexicals;
+        use Template::Toolkit::Simple;
+        use lexicals;
 
         sub mail {
             my $self = shift;
@@ -30,8 +30,8 @@ DESCRIPTION
     Assuming you have a $foo and $bar defined, you get the same thing.
 
     The `lexicals` module exports a function called `lexicals`. This
-    function returns the locals as a hash ref in scalar context and a
-    listified hash in list context.
+    function returns the lexicals as a hash reference (in scalar or list
+    context).
 
 NOTE
     The "lexicals" function only reports the lexical variables variables
@@ -44,9 +44,14 @@ DEBUGGING TRICK
 
         sub foo {
             ...
-            XXX {lexicals};     # See your lexicals in the nude.
+            XXX lexicals;     # See your lexicals in the nude.
             ...
         }
+
+SEE ALSO
+    *   PadWalker
+
+    *   Acme::Locals
 
 AUTHOR
     Ingy döt Net <ingy@ingy.net>

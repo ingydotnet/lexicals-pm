@@ -33,8 +33,8 @@ sub lexicals {
 
 =head1 SYNOPSIS
 
-  use Template::Toolkit::Simple;
-  use lexicals;
+    use Template::Toolkit::Simple;
+    use lexicals;
 
     sub mail {
         my $self = shift;
