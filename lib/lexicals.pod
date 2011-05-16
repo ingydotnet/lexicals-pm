@@ -1,0 +1,71 @@
+=encoding utf8
+
+=head1 NAME
+
+lexicals - Create a hash of your 'my' variables
+
+=head1 SYNOPSIS
+
+  use Template::Toolkit::Simple;
+  use lexicals;
+
+    sub mail {
+        my $self = shift;
+        my $name = 'Mr. ' . $self->get_name;
+        my $address = $self->fetch_address($name);
+        my $stamp = Postage::Stamp->new(0.44);
+        my $envelope = tt->render('envelope', lexicals);
+    }
+
+=head1 DESCRIPTION
+
+Python has a builtin function called `locals()` that returns the lexically
+scoped variables in a name/value mapping. This is a very useful idiom.
+Instead of needing to create a hash like this:
+
+    my $hash = {
+        foo => $foo,
+        bar => $bar,
+    };
+
+Just say:
+
+    my $hash = lexicals;
+
+Assuming you have a $foo and $bar defined, you get the same thing.
+
+The `lexicals` module exports a function called `lexicals`. This function
+returns the locals as a hash ref in scalar context and a listified hash in
+list context.
+
+=head1 NOTE
+
+The C<lexicals> function only reports the lexical variables variables that
+were defined before where it gets called.
+
+=head1 DEBUGGING TRICK
+
+This could be a handy idiom for debugging:
+
+    use XXX;
+
+    sub foo {
+        ...
+        XXX {lexicals};     # See your lexicals in the nude.
+        ...
+    }
+
+=head1 AUTHOR
+
+Ingy döt Net <ingy@ingy.net>
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright (c) 2011. Ingy döt Net.
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+
+See http://www.perl.com/perl/misc/Artistic.html
+
+=cut
