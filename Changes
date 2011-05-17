@@ -1,4 +1,11 @@
 ---
+version: 0.11
+date:    Mon May 16 22:16:38 EST 2011
+changes:
+- requires PadWalker
+- inc::Package
+- stardoc_clean_pod
+---
 version: 0.10
 date:    Mon May 16 22:16:38 EST 2011
 changes:

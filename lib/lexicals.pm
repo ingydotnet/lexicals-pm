@@ -12,7 +12,7 @@ package lexicals;
 use 5.005008;
 use strict;
 
-our $VERSION = '0.10';
+our $VERSION = '0.11';
 
 use PadWalker;
 
@@ -80,5 +80,3 @@ This could be a handy idiom for debugging:
         XXX lexicals;     # See your lexicals in the nude.
         ...
     }
-
-=cut

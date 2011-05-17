@@ -1,1 +1,3 @@
-use inc::Module::Install; pkg;
+use inc::Package;
+
+requires 'PadWalker';
