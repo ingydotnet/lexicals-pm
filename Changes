@@ -1,4 +1,9 @@
 ---
+version: 0.12
+date:    Wed May 18 15:18:27 EST 2011
+changes:
+- Use Module::Package
+---
 version: 0.11
 date:    Mon May 16 22:16:38 EST 2011
 changes:

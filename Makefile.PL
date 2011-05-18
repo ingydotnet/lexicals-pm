@@ -1,3 +1,3 @@
-use inc::Package;
+use inc::Module::Package;
 
 requires 'PadWalker';

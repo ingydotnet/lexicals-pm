@@ -1,5 +1,5 @@
 NAME
-    lexicals - Create a hash of your 'my' variables
+    lexicals - Get a hash of your current 'my' variables
 
 SYNOPSIS
         use Template::Toolkit::Simple;

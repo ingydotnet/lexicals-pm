@@ -1,6 +1,6 @@
 ##
 # name: lexicals
-# abstract: Create a hash of your 'my' variables
+# abstract: Get a hash of your current 'my' variables
 # author: Ingy döt Net <ingy@ingy.net>
 # license: perl
 # copyright: 2011
@@ -12,7 +12,7 @@ package lexicals;
 use 5.005008;
 use strict;
 
-our $VERSION = '0.11';
+our $VERSION = '0.12';
 
 use PadWalker;
 
@@ -69,14 +69,17 @@ returns the lexicals as a hash reference (in scalar or list context).
 The C<lexicals> function only reports the lexical variables variables that
 were defined before where it gets called.
 
-=head1 DEBUGGING TRICK
+=cut
 
-This could be a handy idiom for debugging:
-
-    use XXX;
-
-    sub foo {
-        ...
-        XXX lexicals;     # See your lexicals in the nude.
-        ...
-    }
+##
+# =head1 DEBUGGING TRICK
+# 
+# This could be a handy idiom for debugging:
+# 
+#     use XXX;
+# 
+#     sub foo {
+#         ...
+#         XXX lexicals;     # See your lexicals in the nude.
+#         ...
+#     }
