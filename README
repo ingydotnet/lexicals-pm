@@ -33,6 +33,35 @@ DESCRIPTION
     function returns the lexicals as a hash reference (in scalar or list
     context).
 
+ARRAYS AND HASHES
+    The above examples deal with lexical scalars. You can also get back
+    lexical arrays and hashes. Note: since there is no sigil to tell scalars
+    from arrays from hashes, you can't get back a scalar and an array or
+    hash of the same name. In this case, SCALAR beats HASH beats ARRAY. Why?
+    Because I said so! (Actually I just used the sort order of the sigils).
+
+        sub foo {
+            my %h = ( O => 'HAI' );
+            my @a = [ qw( foo bar baz ) ];
+            my $s = 42;
+            my %x = ( O => 'HAI' );
+            my @x = [ qw( foo bar baz ) ];
+            my $x = 42;
+            print Dump lexicals;
+        }
+
+    would yield:
+
+        ---
+        a:
+        - foo
+        - bar
+        - baz
+        h:
+          O: HAI
+        s: 42
+        x: 42
+
 NOTE
     The "lexicals" function only reports the lexical variables variables
     that were defined before where it gets called.

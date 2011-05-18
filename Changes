@@ -1,4 +1,10 @@
 ---
+version: 0.13
+date:    Thu May 19 00:01:18 EST 2011
+changes:
+- Support hashes, arrays, and nested refs properly
+- Thanks to rafl++ and rjbs++ for pointing out the bugs
+---
 version: 0.12
 date:    Wed May 18 15:18:27 EST 2011
 changes:
