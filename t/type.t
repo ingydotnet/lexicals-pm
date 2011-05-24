@@ -12,7 +12,7 @@ sub foo {
     my @x = (3, 4);
     my %x = (1, 3, 2, 1);
 
-    my $l = lexicals;
+    $l = lexicals;
     is $l->{x}, 7, 'Scalar wins on match';
     is ref($l->{h}), 'HASH', 'lexical hashes are ok';
     is ref($l->{a}), 'ARRAY', 'lexical arrays are ok';

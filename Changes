@@ -1,4 +1,10 @@
 ---
+version: 0.14
+date:    Mon May 23 17:55:50 EST 2011
+changes:
+- Use requires_from in Makefile.PL
+- Fix warning in test.
+---
 version: 0.13
 date:    Thu May 19 00:01:18 EST 2011
 changes:

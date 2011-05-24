@@ -12,9 +12,9 @@ package lexicals;
 use 5.005008;
 use strict;
 
-our $VERSION = '0.13';
+our $VERSION = '0.14';
 
-use PadWalker;
+use PadWalker 0;
 
 use base 'Exporter';
 our @EXPORT = qw(lexicals);

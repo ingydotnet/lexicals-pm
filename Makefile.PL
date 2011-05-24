@@ -1,3 +1,3 @@
 use inc::Module::Package;
 
-requires 'PadWalker';
+requires_from $PM;
