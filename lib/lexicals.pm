@@ -9,12 +9,12 @@
 # - Acme::Locals
 
 package lexicals;
-use 5.005008;
+use 5.008003;
 use strict;
 
-our $VERSION = '0.14';
+our $VERSION = '0.15';
 
-use PadWalker 0;
+use PadWalker 1.92;
 
 use base 'Exporter';
 our @EXPORT = qw(lexicals);
