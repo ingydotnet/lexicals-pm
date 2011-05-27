@@ -6,13 +6,7 @@ __END__
 author_requires 'Module::Package' => '0.12';
 
 author_requires 'Module::Package::Ingy' => '0.01';
-author_requires 'Module::Install::AckXXX' => '0.11';
+author_requires 'Module::Install::AckXXX' => '0.12';
 author_requires 'Module::Install::ReadmeFromPod' => '0.12';
 author_requires 'Module::Install::Stardoc' => '0.13';
-author_requires 'Module::Install::TestBase' => '0.60';
 author_requires 'Module::Install::VersionCheck' => '0.11';
-author_requires 'Spiffy' => '0.30';
-author_requires 'Test::Base' => '0.60';
-author_requires 'Test::Builder' => '0.98';
-author_requires 'Test::Builder::Module' => '0.98';
-author_requires 'Test::More' => '0.98';
