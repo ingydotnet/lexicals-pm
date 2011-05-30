@@ -1,6 +1,4 @@
-# Test to make sure that a package builds and is installable.
-#
-# Probably 
+# Test to make sure that this package builds and is installable.
 use Test::More tests => 1;
 use strict;
 use Cwd qw'cwd abs_path';
@@ -20,4 +18,5 @@ system("cpanm -l local lexicals-*.tar.gz") == 0 or die;
 
 ok -e 'local/lib/perl5/lexicals.pm', 'Install works on user end';
 
+system("rm lexicals-*.tar.gz") == 0 or die;
 system("rm -fr local") == 0 or die;

@@ -1,4 +1,10 @@
 ---
+version: 0.19
+date:    Mon May 30 15:24:04 EST 2011
+changes:
+- Rerelease with Module::Package 0.17
+- 3rd time's a charm
+---
 version: 0.18
 date:    Sun May 29 23:57:43 EST 2011
 changes:

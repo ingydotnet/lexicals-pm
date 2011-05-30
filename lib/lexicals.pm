@@ -12,7 +12,7 @@ package lexicals;
 use 5.008003;
 use strict;
 
-our $VERSION = '0.18';
+our $VERSION = '0.19';
 
 use PadWalker 1.92;
 
