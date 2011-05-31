@@ -1,4 +1,10 @@
 ---
+version: 0.20
+date:    Tue May 31 20:35:50 EST 2011
+changes:
+- Rerelease with Module::Package 0.19
+- Change Makefile.PL to new call style.
+---
 version: 0.19
 date:    Mon May 30 15:24:04 EST 2011
 changes:
