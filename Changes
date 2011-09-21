@@ -1,4 +1,10 @@
 ---
+version: 0.21
+date:    Thu Sep 22 00:00:30 CEST 2011
+changes:
+- Minor tweaks.
+- Released from Liz++ and Wendy++'s fitness room. On the upper body machine!
+---
 version: 0.20
 date:    Tue May 31 20:35:50 EST 2011
 changes:

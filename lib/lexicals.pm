@@ -1,20 +1,22 @@
 ##
-# name: lexicals
-# abstract: Get a hash of your current 'my' variables
-# author: Ingy döt Net <ingy@ingy.net>
-# license: perl
+# name:      lexicals
+# abstract:  Get a hash of your current 'my' variables
+# author:    Ingy döt Net <ingy@ingy.net>
+# license:   perl
 # copyright: 2011
 # see:
 # - PadWalker
 # - Acme::Locals
 
-package lexicals;
 use 5.008003;
 use strict;
-
-our $VERSION = '0.20';
+use warnings;
 
 use PadWalker 1.92;
+
+package lexicals;
+
+our $VERSION = '0.21';
 
 use base 'Exporter';
 our @EXPORT = qw(lexicals);
