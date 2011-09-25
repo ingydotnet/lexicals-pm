@@ -26,7 +26,10 @@ sub lexicals {
     return +{
         map {
             my $v = $hash->{$_};
-            $v = $$v if ref($v) =~ m'^(SCALAR|REF)$';
+            # you never know how the return value of ref() will change
+            my $scal = "s";
+            my $ref  = \\$scal;
+            $v = $$v if ( ref($v) eq ref($scal) || ref($v) eq ref($rev) );
             s/^[\$\@\%\*]//;
             ($_, $v);
         } reverse sort keys %$hash
