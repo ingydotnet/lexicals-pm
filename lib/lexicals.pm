@@ -29,7 +29,7 @@ sub lexicals {
             # you never know how the return value of ref() will change
             my $scal = "s";
             my $ref  = \\$scal;
-            $v = $$v if ( ref($v) eq ref($scal) || ref($v) eq ref($rev) );
+            $v = $$v if ( ref($v) eq ref($scal) || ref($v) eq ref($ref) );
             s/^[\$\@\%\*]//;
             ($_, $v);
         } reverse sort keys %$hash
