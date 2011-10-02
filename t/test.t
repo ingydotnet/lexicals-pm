@@ -2,8 +2,6 @@ use Test::More tests => 6;
 
 use lexicals;
 
-#my $outside = "tscha";
-
 sub example {
     my $self = shift;
     my $worth;
