@@ -23,7 +23,6 @@ our @EXPORT = qw(lexicals);
 
 sub lexicals {
     my $hash = PadWalker::peek_my(1);
-    # you never know how the return value of ref() will change
     my $s = "s";
     my $scal = \$s;
     my $ref  = \\$s;
