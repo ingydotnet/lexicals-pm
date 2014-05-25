@@ -23,10 +23,13 @@ our @EXPORT = qw(lexicals);
 
 sub lexicals {
     my $hash = PadWalker::peek_my(1);
+    my $s = "s";
+    my $scal = \$s;
+    my $ref  = \\$s;
     return +{
         map {
             my $v = $hash->{$_};
-            $v = $$v if ref($v) =~ m'^(SCALAR|REF)$';
+            $v = $$v if ( ref($v) eq ref($scal) || ref($v) eq ref($ref) );
             s/^[\$\@\%\*]//;
             ($_, $v);
         } reverse sort keys %$hash
