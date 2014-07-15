@@ -1,7 +1,7 @@
 =meta: 0.0.1
 
 name: lexicals
-version: 0.22
+version: 0.23
 abstract: Get a hash of your current 'my' variables
 homepage: https://metacpan.org/release/lexicals
 
@@ -20,8 +20,8 @@ requires:
   PadWalker: 1.92
 
 devel:
-  git: git@github.org/ingydotnet/lexicals-pm
+  git: https://github.com/ingydotnet/lexicals-pm
+  bug: https://github.com/ingydotnet/lexicals-pm/issues
   irc: irc.freenode.net#ingy
-  bug: https://github.com/ingydotnet/lexicals-pm/issues/
 
 =travis: perl

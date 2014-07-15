@@ -10,7 +10,7 @@
 
 use strict; use warnings;
 package lexicals;
-our $VERSION = '0.22';
+our $VERSION = '0.23';
 
 use PadWalker;
 
