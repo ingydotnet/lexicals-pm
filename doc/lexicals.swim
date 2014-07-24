@@ -3,6 +3,8 @@ lexicals
 
 Get a hash of your current 'my' variables
 
+<badge travis coveralls ingydotnet/lexicals-pm>
+
 = Synopsis
 
   use Template::Toolkit::Simple;
@@ -89,6 +91,7 @@ This could be a handy idiom for debugging:
 
 * [PadWalker]
 * [Acme::Locals]
+* [XXX]
 
 = Author
 

@@ -10,6 +10,10 @@ See http://github.com/ingydotnet/swim-pm#readme
 
 lexicals - Get a hash of your current 'my' variables
 
+=for html
+<a href="https://travis-ci.org/ingydotnet/lexicals-pm"><img src="https://travis-ci.org/ingydotnet/lexicals-pm.png" alt="lexicals-pm"></a>
+<a href="https://coveralls.io/r/ingydotnet/lexicals-pm?branch=master"><img src="https://coveralls.io/repos/ingydotnet/lexicals-pm/badge.png" alt="lexicals-pm"></a>
+
 =head1 SYNOPSIS
 
     use Template::Toolkit::Simple;
@@ -99,6 +103,8 @@ This could be a handy idiom for debugging:
 =item * L<PadWalker>
 
 =item * L<Acme::Locals>
+
+=item * L<XXX>
 
 =back
 
