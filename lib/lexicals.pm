@@ -1,16 +1,6 @@
-##
-# name:      lexicals
-# abstract:  Get a hash of your current 'my' variables
-# author:    Ingy döt Net <ingy@ingy.net>
-# license:   perl
-# copyright: 2011
-# see:
-# - PadWalker
-# - Acme::Locals
-
 use strict; use warnings;
 package lexicals;
-our $VERSION = '0.25';
+our $VERSION = '0.26';
 
 use PadWalker;
 

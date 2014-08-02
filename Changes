@@ -1,4 +1,9 @@
 ---
+version: 0.26
+date:    Sat Aug  2 16:09:34 PDT 2014
+changes:
+- Remove old doc section
+---
 version: 0.25
 date:    Wed Jul 30 15:47:42 PDT 2014
 changes:
