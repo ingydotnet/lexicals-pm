@@ -1,6 +1,6 @@
 use strict; use warnings;
 package lexicals;
-our $VERSION = '0.26';
+our $VERSION = '0.27';
 
 use PadWalker;
 

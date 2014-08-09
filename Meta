@@ -1,7 +1,7 @@
 =meta: 0.0.1
 
 name: lexicals
-version: 0.26
+version: 0.27
 abstract: Get a hash of your current 'my' variables
 homepage: https://metacpan.org/release/lexicals
 

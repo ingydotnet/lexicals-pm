@@ -73,8 +73,6 @@ would yield:
 The `lexicals` function only reports the lexical variables variables that
 were defined before where it gets called.
 
-=cut
-
 = Debugging Trick
 
 This could be a handy idiom for debugging:
