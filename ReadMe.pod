@@ -94,7 +94,7 @@ This could be a handy idiom for debugging:
         ...
     }
 
-=head1 SEE
+=head1 SEE ALSO
 
 =over
 

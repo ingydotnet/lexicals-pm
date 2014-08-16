@@ -85,7 +85,7 @@ This could be a handy idiom for debugging:
       ...
   }
 
-= See
+= See Also
 
 * [PadWalker]
 * [Acme::Locals]
