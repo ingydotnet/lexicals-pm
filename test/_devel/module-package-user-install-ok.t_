@@ -3,7 +3,7 @@ use Test::More tests => 1;
 use strict;
 use Cwd qw'cwd abs_path';
 
-die "Error: Use devel-local!\n\n" unless 
+die "Error: Use devel-local!\n\n" unless
     $ENV{PERL5LIB} =~ /module-package-pm/;
 
 delete $ENV{PERL_CPANM_OPT};
