@@ -1,7 +1,7 @@
 =meta: 0.0.2
 
 name: lexicals
-version: 0.33
+version: 0.34
 abstract: Get a hash of your current 'my' variables
 homepage: https://metacpan.org/release/lexicals
 language: perl
@@ -24,3 +24,10 @@ devel:
 requires:
   perl: 5.8.1
   PadWalker: 1.92
+
+see:
+- PadWalker
+- Acme::Locals
+- XXX
+
+badge: travis

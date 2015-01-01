@@ -1,4 +1,9 @@
 ---
+version: 0.34
+date:    Wed Dec 31 15:53:28 PST 2014
+changes:
+- New doc standard.
+---
 version: 0.33
 date:    Fri Dec 26 21:39:28 PST 2014
 changes:
